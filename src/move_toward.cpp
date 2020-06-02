@@ -41,7 +41,7 @@ private:
     void move2person (const geometry_msgs::Point Position){
         geometry_msgs::Twist vel;
         std_msgs::Bool stop;
-        double vxMax = 0.15, vYaw = 0.2;
+        double vxMax = 0.15, vYaw = 0.15;
         double thi = atan2(Position.y, Position.x)*180/M_PI;
         cout << "x=" << Position.x << endl;
         cout << "y=" << Position.y << endl;
